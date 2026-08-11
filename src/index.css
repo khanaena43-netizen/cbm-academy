@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cbm-navy: #072B57;
+    --color-cbm-orange: #FF6B00;
+    --color-cbm-orange-hover: #E05E00;
+    --color-cbm-bg: #FFFFFF;
+    --color-cbm-light: #F8FAFC;
+    --color-cbm-text: #1E293B;
+    --color-cbm-border: #E5E7EB;
+  }
+}
+
+.cbm-btn-primary {
+  background-color: #FF6B00;
+  color: #FFFFFF;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.cbm-btn-primary:hover {
+  background-color: #E05E00;
+  transform: translateY(-1px);
+}
+
+.cbm-btn-primary:active {
+  transform: translateY(0);
+}
+
+.cbm-btn-secondary {
+  background-color: #FFFFFF;
+  color: #072B57;
+  border: 1.5px solid #072B57;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.cbm-btn-secondary:hover {
+  background-color: rgba(7, 43, 87, 0.05);
+  transform: translateY(-1px);
+}
+
+.cbm-btn-secondary:active {
+  transform: translateY(0);
+}
+
+.cbm-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.cbm-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 12px -2px rgba(7, 43, 87, 0.08);
+}
+
